@@ -62,6 +62,6 @@ header.banner p {
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
     .pdf-container img {
-        width: 100%; /* Aumenta el tamaño en móviles */
+        width: 200%; /* Aumenta el tamaño en móviles */
     }
 }
