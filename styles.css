@@ -56,7 +56,7 @@ header.banner p {
 }
 
 .pdf-container img:hover {
-    transform: scale(1.05);
+    transform: scale(1.15);
 }
 
 /* Ajustes para pantallas pequeñas */
