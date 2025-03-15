@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #1b2b3e;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,8 +12,8 @@ body {
 
 /* Banner de fondo para el título */
 header.banner {
-    background-color: #605293;
-    color: white;
+    background-color: #2A3644;
+    color: #b6d656;
     width: 100%;
     padding: 20px 0;
     text-align: center;
@@ -38,7 +38,7 @@ header.banner p {
     flex-direction: column; /* Apila las imágenes una debajo de la otra */
     align-items: center;
     gap: 20px;
-    width: 100%;
+    width: 40%;
     padding: 20px;
     margin-top: 20px;
     box-sizing: border-box;
