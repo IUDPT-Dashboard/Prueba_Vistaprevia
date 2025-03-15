@@ -42,7 +42,7 @@ header.banner h1 {
 
 /* Estilos de las imágenes de vista previa */
 .pdf-container img {
-    width: calc(50% - 10px); /* Ocupa el 50% del ancho menos el espacio del gap */
+    width: calc(100% - 10px); /* Ocupa el 50% del ancho menos el espacio del gap */
     max-width: 100%;
     height: auto;
     border: 1px solid #ccc;
