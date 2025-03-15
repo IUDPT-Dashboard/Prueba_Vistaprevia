@@ -26,11 +26,6 @@ header.banner h1 {
     margin: 0; /* Elimina el margen predeterminado */
 }
 
-header.banner p {
-    font-size: 1.2rem; /* Tamaño del subtítulo */
-    margin: 10px 0 0; /* Espaciado */
-}
-
 /* Contenedor de las vistas previas */
 .pdf-container {
     display: flex;
