@@ -55,14 +55,6 @@ header.banner h1 {
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
     .pdf-container img {
-        width: 80%; /* Aumenta el tamaño en móviles */
-    }
-}
-
-/* Ajustes para pantallas grandes */
-@media (min-width: 1024px) {
-    .pdf-container img {
-        width: 48%; /* Aumenta el tamaño en escritorio */
-        max-width: 800px; /* Permite un tamaño más grande */
+        width: 100%; /* Aumenta el tamaño en móviles */
     }
 }
