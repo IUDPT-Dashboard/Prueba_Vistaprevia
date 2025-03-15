@@ -1,36 +1,48 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     background-color: #f9f9f9;
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
 }
 
-h1 {
-    color: #605293; /* Color del título */
-    font-size: 2.5rem; /* Tamaño del título (ajusta según necesites) */
-    margin-bottom: 20px;
+/* Banner de fondo para el título */
+header.banner {
+    background-color: #605293; /* Color de fondo del banner */
+    color: white; /* Color del texto */
+    width: 100%; /* Ocupa el 100% del ancho */
+    padding: 20px 0; /* Espaciado interno */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
 }
 
+/* Personalización del título */
+header.banner h1 {
+    font-size: 2.5rem; /* Tamaño del título */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+header.banner p {
+    font-size: 1.2rem; /* Tamaño del subtítulo */
+    margin: 10px 0 0; /* Espaciado */
+}
+
+/* Contenedor de las vistas previas */
 .pdf-container {
-      display: flex;
+    display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap; /* Permite que las imágenes se ajusten en pantallas pequeñas */
-    width: 100%; /* Ocupa el 100% del ancho disponible */
-    max-width: 1200px; /* Limita el ancho máximo para no estirar demasiado en pantallas grandes */
-    margin: 0 auto; /* Centra el contenedor */
+    width: 100%; /* Ocupa el 100% del ancho */
+    max-width: 1200px; /* Limita el ancho máximo */
+    padding: 20px; /* Espaciado interno */
+    margin-top: 20px; /* Espacio entre el banner y las imágenes */
 }
 
-.pdf-container a {
-    text-decoration: none;
-}
-
+/* Estilos de las imágenes de vista previa */
 .pdf-container img {
     width: 45%; /* Ajusta el ancho de las imágenes */
     max-width: 600px; /* Limita el tamaño máximo */
@@ -42,11 +54,20 @@ h1 {
 }
 
 .pdf-container img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Efecto de hover */
 }
+
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
     .pdf-container img {
         width: 80%; /* Aumenta el tamaño en móviles */
     }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1024px) {
+    .pdf-container img {
+        width: 48%; /* Aumenta el tamaño en escritorio */
+        max-width: 800px; /* Permite un tamaño más grande */
     }
+}
