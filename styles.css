@@ -1,9 +1,9 @@
 /* Estilos generales */
 body {
-   font-family: 'Montserrat, 'Roboto, 'sans-serif, 'arial;
+    font-family: 'Montserrat', 'Roboto', 'sans-serif', 'arial';
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #e7f8b1, #122b4); /* Degradado de fondo */
+    background: linear-gradient(135deg, #e7f8b1, #122b48); /* Degradado de fondo */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +17,7 @@ header.banner {
     width: 100%;
     padding: 20px 0;
     text-align: center;
-    box-shadow: 0px 3px 6px rgb(42 54 78 / 50%);
+    box-shadow: 0px 3px 6px rgba(42, 54, 78, 0.5);
     margin: 0;
     border-top: 4px solid #b6d656; /* Borde superior */
     border-bottom: 4px solid #b6d656; /* Borde inferior */
@@ -26,14 +26,16 @@ header.banner {
     justify-content: center; /* Centra horizontalmente los elementos */
     position: relative; /* Necesario para posicionar el logo */
 }
+
 /* Estilos para la imagen del banner */
 .banner-logo {
     height: 90px; /* Ajusta el tamaño de la imagen */
     width: auto; /* Mantiene la proporción de la imagen */
     margin-right: 25px; /* Espacio entre la imagen y el título */
     position: absolute; /* Posiciona la imagen de manera absoluta */
-    left: 07px; /* Distancia desde la izquierda */
+    left: 7px; /* Distancia desde la izquierda */
 }
+
 /* Personalización del título */
 header.banner h1 {
     font-size: 2.5rem;
@@ -47,9 +49,11 @@ header.banner p {
 
 /* Contenedor de las vistas previas */
 .pdf-container {
-    display: inline;
-    flex-direction: row; /* Apila las imágenes una debajo de la otra */
-    gap: 20px;
+    display: flex;
+    flex-direction: row; /* Coloca los elementos en fila (uno al lado del otro) */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
     width: 100%;
     padding: 20px;
     margin-top: 20px;
@@ -58,30 +62,41 @@ header.banner p {
 
 /* Estilos de las imágenes de vista previa */
 .pdf-container img {
-    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    width: calc(50% - 10px); /* Ocupa el 50% del ancho menos el espacio del gap */
+    max-width: 100%; /* Evita que la imagen se desborde */
+    height: auto; /* Mantiene la proporción */
     border: 10px solid #e7f8b1;
     border-radius: 50px;
     transition: transform 0.2s;
-
+    object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
 }
 
 .pdf-container img:hover {
-    transform: scale(1.07);
+    transform: scale(1.07); /* Efecto de escala al hacer hover */
 }
 
-/* Ajustes para pantallas pequeñas */
- header.banner {
-        flex-direction: row; /* Apila el logo y el título verticalmente */
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    header.banner {
+        flex-direction: row; /* Mantiene el logo y el título en fila */
         padding: 15px 0; /* Reduce el padding para ahorrar espacio */
     }
 
     .banner-logo {
         position: static; /* Elimina el posicionamiento absoluto */
-        margin: 0 20px 0px 0; /* Espacio entre el logo y el título */
+        margin: 0 20px 0 0; /* Espacio entre el logo y el título */
         height: 40px; /* Reduce el tamaño del logo para móviles */
     }
 
     header.banner h1 {
         font-size: 2rem; /* Reduce el tamaño del título para móviles */
+    }
+
+    .pdf-container {
+        flex-direction: column; /* Apila los elementos verticalmente */
+    }
+
+    .pdf-container img {
+        width: 100%; /* Ocupa el 100% del ancho en móviles */
     }
 }
