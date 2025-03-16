@@ -34,9 +34,8 @@ header.banner p {
 
 /* Contenedor de las vistas previas */
 .pdf-container {
-    display: flex;
-    flex-direction: column; /* Apila las imágenes una debajo de la otra */
-    align-items: center;
+    display: inline;
+    flex-direction: row; /* Apila las imágenes una debajo de la otra */
     gap: 20px;
     width: 100%;
     padding: 20px;
@@ -47,12 +46,10 @@ header.banner p {
 /* Estilos de las imágenes de vista previa */
 .pdf-container img {
     width: 100%; /* Ocupa el 100% del ancho del contenedor */
-    max-width: 100%; /* Evita que la imagen se desborde */
-    height: auto; /* Mantiene la proporción */
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 10px solid #E7F8B1;
+    border-radius: 1000px;
     transition: transform 0.2s;
-    object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
+
 }
 
 .pdf-container img:hover {
@@ -65,3 +62,4 @@ header.banner p {
         width: 100%; /* Aumenta el tamaño en móviles */
     }
 }
+
