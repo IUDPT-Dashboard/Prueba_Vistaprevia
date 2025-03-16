@@ -77,7 +77,7 @@ header.banner p {
 
     .banner-logo {
         position: static; /* Elimina el posicionamiento absoluto */
-        margin: 0 15px 10px 0; /* Espacio entre el logo y el título */
+        margin: 0 15px 0px 0; /* Espacio entre el logo y el título */
         height: 40px; /* Reduce el tamaño del logo para móviles */
     }
 
