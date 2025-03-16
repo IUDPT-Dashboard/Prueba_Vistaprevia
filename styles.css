@@ -71,13 +71,13 @@ header.banner p {
 
 /* Ajustes para pantallas pequeñas */
  header.banner {
-        flex-direction: column; /* Apila el logo y el título verticalmente */
+        flex-direction: row; /* Apila el logo y el título verticalmente */
         padding: 15px 0; /* Reduce el padding para ahorrar espacio */
     }
 
     .banner-logo {
         position: static; /* Elimina el posicionamiento absoluto */
-        margin: 0 0 10px 0; /* Espacio entre el logo y el título */
+        margin: 0 15px 10px 0; /* Espacio entre el logo y el título */
         height: 40px; /* Reduce el tamaño del logo para móviles */
     }
 
