@@ -60,7 +60,7 @@ header.banner p {
 .pdf-container img {
     width: 100%; /* Ocupa el 100% del ancho del contenedor */
     border: 10px solid #e7f8b1;
-    border-radius: 1000px;
+    border-radius: 50px;
     transition: transform 0.2s;
 
 }
