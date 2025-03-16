@@ -28,11 +28,11 @@ header.banner {
 }
 /* Estilos para la imagen del banner */
 .banner-logo {
-    height: 75px; /* Ajusta el tamaño de la imagen */
+    height: 90px; /* Ajusta el tamaño de la imagen */
     width: auto; /* Mantiene la proporción de la imagen */
-    margin-right: 15px; /* Espacio entre la imagen y el título */
+    margin-right: 25px; /* Espacio entre la imagen y el título */
     position: absolute; /* Posiciona la imagen de manera absoluta */
-    left: 20px; /* Distancia desde la izquierda */
+    left: 07px; /* Distancia desde la izquierda */
 }
 /* Personalización del título */
 header.banner h1 {
@@ -77,7 +77,7 @@ header.banner p {
 
     .banner-logo {
         position: static; /* Elimina el posicionamiento absoluto */
-        margin: 0 15px 0px 0; /* Espacio entre el logo y el título */
+        margin: 0 20px 0px 0; /* Espacio entre el logo y el título */
         height: 40px; /* Reduce el tamaño del logo para móviles */
     }
 
