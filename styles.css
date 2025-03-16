@@ -66,12 +66,22 @@ header.banner p {
 }
 
 .pdf-container img:hover {
-    transform: scale(1.15);
+    transform: scale(1.07);
 }
 
 /* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
-    .pdf-container img {
-        width: 100%; /* Aumenta el tamaño en móviles */
+ header.banner {
+        flex-direction: column; /* Apila el logo y el título verticalmente */
+        padding: 15px 0; /* Reduce el padding para ahorrar espacio */
+    }
+
+    .banner-logo {
+        position: static; /* Elimina el posicionamiento absoluto */
+        margin: 0 0 10px 0; /* Espacio entre el logo y el título */
+        height: 40px; /* Reduce el tamaño del logo para móviles */
+    }
+
+    header.banner h1 {
+        font-size: 2rem; /* Reduce el tamaño del título para móviles */
     }
 }
