@@ -1,9 +1,9 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+   font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1b2b3e;
+    background: linear-gradient(135deg, #e7f8b1, #779618); /* Degradado de fondo */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,8 +12,8 @@ body {
 
 /* Banner de fondo para el título */
 header.banner {
-    background-color: rgba(42, 54, 68, 0.8); /* Fondo con transparencia (0.8 de opacidad) */
-    color: #b6d656;
+    background-color: rgba(231, 248, 177, 0.80); /* Fondo con transparencia (0.8 de opacidad) */
+    color: #122b48;
     width: 100%;
     padding: 20px 0;
     text-align: center;
@@ -28,7 +28,7 @@ header.banner {
 }
 /* Estilos para la imagen del banner */
 .banner-logo {
-    height: 50px; /* Ajusta el tamaño de la imagen */
+    height: 75px; /* Ajusta el tamaño de la imagen */
     width: auto; /* Mantiene la proporción de la imagen */
     margin-right: 15px; /* Espacio entre la imagen y el título */
     position: absolute; /* Posiciona la imagen de manera absoluta */
@@ -59,7 +59,7 @@ header.banner p {
 /* Estilos de las imágenes de vista previa */
 .pdf-container img {
     width: 100%; /* Ocupa el 100% del ancho del contenedor */
-    border: 10px solid #E7F8B1;
+    border: 10px solid #e7f8b1;
     border-radius: 1000px;
     transition: transform 0.2s;
 
@@ -75,4 +75,3 @@ header.banner p {
         width: 100%; /* Aumenta el tamaño en móviles */
     }
 }
-
