@@ -12,15 +12,28 @@ body {
 
 /* Banner de fondo para el título */
 header.banner {
-    background-color: #2A3644;
+    background-color: rgba(42, 54, 68, 0.8); /* Fondo con transparencia (0.8 de opacidad) */
     color: #b6d656;
     width: 100%;
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 0;
+    border-top: 4px solid #b6d656; /* Borde superior */
+    border-bottom: 4px solid #b6d656; /* Borde inferior */
+    display: flex; /* Usa flexbox para alinear la imagen y el texto */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    position: relative; /* Necesario para posicionar el logo */
 }
-
+/* Estilos para la imagen del banner */
+.banner-logo {
+    height: 50px; /* Ajusta el tamaño de la imagen */
+    width: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 15px; /* Espacio entre la imagen y el título */
+    position: absolute; /* Posiciona la imagen de manera absoluta */
+    left: 20px; /* Distancia desde la izquierda */
+}
 /* Personalización del título */
 header.banner h1 {
     font-size: 2.5rem;
