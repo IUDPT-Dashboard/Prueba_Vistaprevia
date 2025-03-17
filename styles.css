@@ -79,7 +79,7 @@ header.banner p {
 @media (max-width: 768px) {
     header.banner {
         flex-direction: row; /* Mantiene el logo y el título en fila */
-        padding: 15px 0; /* Reduce el padding para ahorrar espacio */
+        padding: 10px 0; /* Reduce el padding para ahorrar espacio */
     }
 
     .banner-logo {
@@ -89,7 +89,7 @@ header.banner p {
     }
 
     header.banner h1 {
-        font-size: 2.5rem; /* Reduce el tamaño del título para móviles */
+        font-size: 1.0rem; /* Reduce el tamaño del título para móviles */
     }
 
     .pdf-container {
