@@ -97,13 +97,13 @@ header.banner p {
     .pdf-container {
         flex-direction: column; /* Apila los elementos verticalmente */
         padding: 10px; /* Reduce el padding para que las imágenes ocupen más espacio */
-        width: 100%; /* Ocupa el 100% del ancho disponible */
+        width: 80%; /* Ocupa el 100% del ancho disponible */
         max-width: 100%; /* Evita que el contenedor se desborde */
         margin: 0 auto; /* Centra el contenedor si es necesario */
     }
 
     .pdf-container img {
-         width: 100%; /* Ocupa el 100% del ancho en móviles */
+         width: 80%; /* Ocupa el 100% del ancho en móviles */
         height: auto; /* Mantiene la proporción */
         border: 6.5px solid #F0F4EC;
         border-radius: 35px;
