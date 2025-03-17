@@ -79,7 +79,7 @@ header.banner p {
 @media (max-width: 768px) {
     header.banner {
         flex-direction: row; /* Mantiene el logo y el título en fila */
-        padding: 15px 0; /* Reduce el padding para ahorrar espacio */
+        padding: 0px 0; /* Reduce el padding para ahorrar espacio */
     }
 
     .banner-logo {
