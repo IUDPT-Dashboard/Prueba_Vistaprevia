@@ -103,7 +103,7 @@ header.banner p {
     }
 
     .pdf-container img {
-         width: 80%; /* Ocupa el 100% del ancho en móviles */
+         width: 100%; /* Ocupa el 100% del ancho en móviles */
         height: auto; /* Mantiene la proporción */
         border: 6.5px solid #F0F4EC;
         border-radius: 35px;
