@@ -79,7 +79,7 @@ header.banner p {
 @media (max-width: 768px) {
     header.banner {
         flex-direction: row; /* Mantiene el logo y el título en fila */
-        padding: 10px 0; /* Reduce el padding para ahorrar espacio */
+        padding: 15px 0; /* Reduce el padding para ahorrar espacio */
     }
 
     .banner-logo {
@@ -94,10 +94,17 @@ header.banner p {
 
     .pdf-container {
         flex-direction: column; /* Apila los elementos verticalmente */
+        padding: 10px; /* Reduce el padding para que las imágenes ocupen más espacio */
     }
 
     .pdf-container img {
-        width: 100%; /* Ocupa el 100% del ancho en móviles */
+         width: 100%; /* Ocupa el 100% del ancho en móviles */
+        height: auto; /* Mantiene la proporción */
+        border: 10px solid #e7f8b1;
+        border-radius: 50px;
+        transition: transform 0.2s;
+        object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin distorsionarse */
+        max-height: 500px; /* Aumenta la altura máxima de las imágenes */
     }
 }
 
