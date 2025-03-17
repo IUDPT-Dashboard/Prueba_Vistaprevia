@@ -38,7 +38,7 @@ header.banner {
 
 /* Personalización del título */
 header.banner h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin: 0;
 }
 
@@ -89,7 +89,7 @@ header.banner p {
     }
 
     header.banner h1 {
-        font-size: 2rem; /* Reduce el tamaño del título para móviles */
+        font-size: 2.5rem; /* Reduce el tamaño del título para móviles */
     }
 
     .pdf-container {
