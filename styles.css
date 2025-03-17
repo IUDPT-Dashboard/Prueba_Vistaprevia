@@ -3,7 +3,7 @@ body {
     font-family: 'Montserrat', 'Roboto', 'sans-serif', 'arial';
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #e7f8b1, #122b48); /* Degradado de fondo */
+    background: linear-gradient(135deg, #F0F4EC, #2B3745); /* Degradado de fondo */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,7 @@ body {
 
 /* Banner de fondo para el título */
 header.banner {
-    background-color: rgba(231, 248, 177, 0.80); /* Fondo con transparencia (0.8 de opacidad) */
+    background-color: rgb(240 244 236 / 80%); /* Fondo con transparencia (0.8 de opacidad) */
     color: #122b48;
     width: 100%;
     padding: 20px 0;
@@ -100,3 +100,4 @@ header.banner p {
         width: 100%; /* Ocupa el 100% del ancho en móviles */
     }
 }
+
